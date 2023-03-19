@@ -1,0 +1,75 @@
+
+COMANDOS DE GIT
+
+cd -----> te manda a la raiz principal
+cd documents -----> te manda a la carpeta documents
+************ PARA ESCRIBIR UN DIRECTORIO CON ESPACIO
+cd "curso githuh" ------------> encerrar dentro de comilla
+cd 'E:' == para dirigirme a la unidad(E)
+ls == para listar el contenido dentro del directorio
+cd ..  == para retroceder un nivel
+MAKE DIRECTORY = mk
+mkdir practica  == creara una carpeta "practica"
+REMOVE DIRECTORY = rmdir
+rmdir === eliminar una carpeta o archivo
+clear === limpiar todo lo escrito
+
+**********CONFIGURAR CORREO Y USUARIO **************
+** para configurar email y usuario ubicarse en la carpeta
+- escribir: git config --global user.name luisTapia
+para verificar que se cambio --------------
+-escribir: git config user.name
+
+------- para configurar correo
+- escribir: git config --global user.email imp.llanco@gmail.com
+para verificar que se cambio --------------
+-escribir: git config user.email
+--> git config --global -l   == para listar la configuracion
+
+
+**********CREAR UN REPOSITORIO**************
+--> git init == para crear un repositorio (init=inicializar)
+++++++++++++para cambiar la carpeta (master a main)
+-->git config --global init.defaultBranch main == configuramos a main(luego ir al repositorio y eliminar git)
+--> git init == escribnimos nuevamente para crear un repositorio con nombre main
+
+*************TRES AREAS O ESTADOS DE GIT ***********
+A.- DIRECTORIO DE TRABAJO(modificada): la carpeta del proyecto que contine
+los archivos y el directorio .git del repositorio.
+B.- AREA DE PREPARACION(preparada): conjunto de archivos y cambios que seran
+incluidos en el proximo commit
+
+C.- REPOSITORIO (directorio .git)(confirmada): directorio que contiene los
+metadatos y las versiones de tu proyecto.
+
+**********GIT STATUS**************
+--> git status == para revisar el estado
+--> git add miArchivo.txt  == para agregar y hacer seguimiento (parte del area de preparacion)
+para retractarnos y poner en el estado inicial siguiente:
+-->git rm --cached miArchivo.txt
+--> git status == verificar el estado
+
+**********COMMIT**************comprometerse / confirmar
+es un componente basico, es el registro o estado de un proyecto
+SHA identifica:
+ - los cambios realizados
+  - donde se realizaron los cambios
+  - quien realizo llos cambios
+
+**********CREAR UN COMMIT**************
+--> git commit -m "mensaje para cada cambio"
+--> git log == vemos a detalle
+--> git status = menos mas a detalle
+--> git add . == si modificamos el archivo y quremos aplicar el cambio
+--> nuevamente git status para ver el cambio aplicado
+--> git commit
+
+
+**********EDITOR DE TEXTO PARA LOS COMMIT**************
+--> git config --global core.editor "code --waint"  == para 
+cambiar a visual estudio code
+AVERIGUAR COMO ASOCIAR OTROS EDITORES DE CODIGO A GITHUB EN github docs
+
+**************MODIFICAR UN COMMIT ********
+--> git commit --amend == cambiar mensaje
+-->  git reset --soft HEAD~1    == para deshacer el ultimo cambio
