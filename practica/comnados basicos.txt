@@ -73,3 +73,8 @@ AVERIGUAR COMO ASOCIAR OTROS EDITORES DE CODIGO A GITHUB EN github docs
 **************MODIFICAR UN COMMIT ********
 --> git commit --amend == cambiar mensaje
 -->  git reset --soft HEAD~1    == para deshacer el ultimo cambio
+
+
+**************ramas en GIT ********crear rama
+ una rama en git es una linea independiente de desarrollo
+en el repositorio.
